@@ -1,4 +1,4 @@
-![](https://badges.renovateapi.com/github/bitworkers-official/graphql-typescript-starter)
+![](https://badges.renovateapi.com/github/bitworkers-official/graphql-client-typescript-starter)
 
 # GraphQL Client Typescript Starter
 
