@@ -51,3 +51,7 @@ npm run update-schema
 ```
 
 This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄
+
+## Server
+
+For an accompanying GraphQl server template see https://github.com/bitworkers-official/graphql-server-typescript-starter.
