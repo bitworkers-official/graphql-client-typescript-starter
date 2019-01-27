@@ -13,6 +13,8 @@ npm install &&
 npm run dev
 ```
 
+## Code
+
 ```ts
 // index.ts
 import ApolloClient from 'apollo-boost'
