@@ -2,7 +2,7 @@
 
 # GraphQL Client Typescript Starter
 
-> Starter Template for a GraphQL & Typescript client
+> Starter template for a GraphQL & Typescript client
 
 ## Quickstart 🚀
 
