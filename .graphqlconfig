@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "grapql-client": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "dev": "http://localhost:4000"
+        },
+        "endpoints": {
+          "prod": "https://graphql-typescript-starter.herokuapp.com"
+        }
+      }
+    }
+  }
+}
