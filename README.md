@@ -54,4 +54,4 @@ This updates schema.graphql in the client folder and you can continue to enjoy E
 
 ## Server
 
-For an accompanying GraphQl server template see https://github.com/bitworkers-official/graphql-server-typescript-starter.
+For an accompanying GraphQL server template see https://github.com/bitworkers-official/graphql-server-typescript-starter.
