@@ -7,7 +7,7 @@
 ## Quickstart 🚀
 
 ```bash
-git clone https://github.com/SimonSiefke/graphql-client-typescript-starter &&
+git clone https://github.com/bitworkers-official/graphql-client-typescript-starter &&
 cd graphql-client-typescript-starter &&
 npm install &&
 npm run dev
