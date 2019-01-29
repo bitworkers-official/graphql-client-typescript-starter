@@ -37,7 +37,7 @@ async function hello() {
 hello()
 ```
 
-## ESLint
+<!-- ## ESLint
 
 When you have updated the schema of the server, you also need to update the schema of the client (for ESLint to work properly).
 
@@ -45,7 +45,7 @@ When you have updated the schema of the server, you also need to update the sche
 npm run update-schema
 ```
 
-This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄
+This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄 -->
 
 ## Server
 
