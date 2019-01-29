@@ -4,7 +4,7 @@ import 'cross-fetch/polyfill' // required polyfill for fetch
 
 // configure the apollo client
 const client = new ApolloClient({
-  uri: 'https://graphql-server-typescript.herokuapp.com/',
+  uri: 'https://graphql-server-typescript.herokuapp.com',
 })
 
 async function hello() {
