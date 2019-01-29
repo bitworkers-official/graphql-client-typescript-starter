@@ -16,26 +16,21 @@ npm run dev
 ## Code
 
 ```ts
-// index.ts
-import ApolloClient from 'apollo-boost'
-import gql from 'graphql-tag'
-import 'cross-fetch/polyfill' // required polyfill for fetch
-
-// configure the apollo client
-const client = new ApolloClient({
-  uri: 'https://graphql-typescript-starter.herokuapp.com',
-})
+// api/index.ts
+import { query } from './client'
 
 async function hello() {
+  interface Data {
+    hello: string
+  }
+
   // send a request to the server
-  const { data } = await client.query({
-    // this is our query
-    query: gql`
-      query hello {
-        hello
-      }
-    `,
-  })
+  const { data } = await query<Data>`
+    query hello {
+      hello
+    }
+  `
+
   console.log(data)
 }
 

@@ -2,11 +2,11 @@
   "name": "graphql-client-typescript-starter",
   "version": "1.0.0",
   "description": "Starter template for a GraphQL & Typescript server",
-  "main": "index.ts",
+  "main": "api/index.ts",
   "scripts": {
-    "dev": "nodemon --watch index.ts --exec ts-node index.ts",
+    "dev": "nodemon --watch api --exec ts-node api/index.ts",
     "build": "tsc",
-    "start": "npm run build && node dist/index.js",
+    "start": "npm run build && node dist/api/index.js",
     "update-schema": "graphql get-schema"
   },
   "keywords": [
@@ -32,7 +32,7 @@
     "prettier": "1.16.1",
     "prettier-config-bitworkers": "1.4.1",
     "ts-node": "8.0.2",
-    "typescript": "3.2.4"
+    "typescript": "^3.3.0-dev.20190118"
   },
   "lint-staged": {
     "*.ts": [

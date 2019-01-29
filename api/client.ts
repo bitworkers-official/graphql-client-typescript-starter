@@ -7,15 +7,20 @@ const apolloClient = new ApolloClient({
   uri: 'https://graphql-server-typescript.herokuapp.com',
 })
 
-interface GraphQLResponse<T> {
+/**
+ * the response type of a successful graphql query
+ */
+interface GraphQLSuccessResponse<T> {
   data: T
-  error?: any
 }
 
-export async function gql<T = any>(
-  strings,
-  ...values
-): Promise<GraphQLResponse<T>> {
+/**
+ * Performs a graphql query. If it is not successful (e.g. status code 400), an error is thrown.
+ */
+export async function query<T = any>(
+  strings: TemplateStringsArray,
+  ...values: string[]
+): Promise<GraphQLSuccessResponse<T>> {
   // reconstruct the original string
   const originalString = strings.reduce(
     (total, current, index) => `${total}${current}${values[index] || ''}`,
@@ -26,19 +31,3 @@ export async function gql<T = any>(
     query: graphqlTag`${originalString}`,
   })
 }
-
-async function hello() {
-  interface Data {
-    hello: string
-  }
-  // send a request to the server
-  const { data } = await gql<Data>`
-    query hello {
-      hello
-    }
-  `
-
-  console.log(data)
-}
-
-hello()
