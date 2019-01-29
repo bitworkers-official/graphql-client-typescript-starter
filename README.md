@@ -7,7 +7,7 @@
 ## Quickstart 🚀
 
 ```bash
-git clone https://github.com/SimonSiefke/graphql-client-typescript-starter &&
+git clone https://github.com/bitworkers-official/graphql-client-typescript-starter &&
 cd graphql-client-typescript-starter &&
 npm install &&
 npm run dev
@@ -16,33 +16,28 @@ npm run dev
 ## Code
 
 ```ts
-// index.ts
-import ApolloClient from 'apollo-boost'
-import gql from 'graphql-tag'
-import 'cross-fetch/polyfill' // required polyfill for fetch
-
-// configure the apollo client
-const client = new ApolloClient({
-  uri: 'https://graphql-typescript-starter.herokuapp.com',
-})
+// api/index.ts
+import { query } from './client'
 
 async function hello() {
+  interface Data {
+    hello: string
+  }
+
   // send a request to the server
-  const { data } = await client.query({
-    // this is our query
-    query: gql`
-      query hello {
-        hello
-      }
-    `,
-  })
+  const { data } = await query<Data>`
+    query hello {
+      hello
+    }
+  `
+
   console.log(data)
 }
 
 hello()
 ```
 
-## ESLint
+<!-- ## ESLint
 
 When you have updated the schema of the server, you also need to update the schema of the client (for ESLint to work properly).
 
@@ -50,7 +45,7 @@ When you have updated the schema of the server, you also need to update the sche
 npm run update-schema
 ```
 
-This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄
+This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄 -->
 
 ## Server
 
