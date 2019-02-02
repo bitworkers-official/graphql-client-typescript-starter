@@ -5,12 +5,12 @@
       "type": "node",
       "request": "launch",
       "name": "launch",
-      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
-      "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
-      "args": ["${workspaceRoot}/api/index.ts"],
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon", // path of nodemon
+      "runtimeArgs": ["-r", "ts-node/register"], // attach ts-node debugger
+      "args": ["${workspaceRoot}/api/index.ts"], // the path of the file we want to debug
       "restart": true,
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "console": "integratedTerminal", // use integrated terminal instead of debug console
+      "internalConsoleOptions": "neverOpen" // use integrated terminal instead of debug console
     }
   ]
 }
