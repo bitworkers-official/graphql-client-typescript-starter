@@ -51,6 +51,6 @@ This updates schema.graphql in the client folder and you can continue to enjoy E
 
 Press the green play icon in the debugging pane
 
-## Server
+## GraphQL Server Typescript Starter
 
 For an accompanying GraphQL server template see https://github.com/bitworkers-official/graphql-server-typescript-starter.
