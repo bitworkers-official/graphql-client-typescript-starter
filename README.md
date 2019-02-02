@@ -49,8 +49,7 @@ This updates schema.graphql in the client folder and you can continue to enjoy E
 
 ## Debugging (in Visual Studio Code)
 
-1.  Run `npm run debug`
-1.  Press the green play icon in the debugging pane
+Press the green play icon in the debugging pane
 
 ## Server
 

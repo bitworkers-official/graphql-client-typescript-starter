@@ -6,7 +6,6 @@
   "scripts": {
     "start": "npm run build && node dist/api/index.js",
     "dev": "nodemon --watch api --exec ts-node api/index.ts",
-    "debug": "nodemon --watch api --inspect -r ts-node/register ./api/index.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
     "update-schema": "graphql get-schema"
