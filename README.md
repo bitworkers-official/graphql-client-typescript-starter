@@ -47,6 +47,11 @@ npm run update-schema
 
 This updates schema.graphql in the client folder and you can continue to enjoy ESLint catching your errors 😄 -->
 
+## Debugging (in Visual Studio Code)
+
+1.  Run `npm run debug`
+1.  Press the green play icon in the debugging pane
+
 ## Server
 
 For an accompanying GraphQL server template see https://github.com/bitworkers-official/graphql-server-typescript-starter.
