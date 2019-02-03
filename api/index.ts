@@ -6,7 +6,7 @@ async function hello() {
   }
 
   // send a request to the server
-  const { data } = await query<Data>`
+  const { data } = await query<Data>/* graphql */ `
     query hello {
       hello
     }

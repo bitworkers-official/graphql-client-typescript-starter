@@ -19,6 +19,9 @@
     "christian-kohler.npm-intellisense",
     // GraphQL support
     // https://github.com/prisma/vscode-graphql
-    "Prisma.vscode-graphql"
+    "Prisma.vscode-graphql",
+    // GraphQL syntax highlighting in tagged template literals
+    // https://marketplace.visualstudio.com/items?itemName=bierner.comment-tagged-templates
+    "bierner.comment-tagged-templates"
   ]
 }
