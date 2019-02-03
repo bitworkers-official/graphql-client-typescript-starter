@@ -1,10 +1,13 @@
-import ApolloClient from 'apollo-boost'
+import ApolloClient, { InMemoryCache } from 'apollo-boost'
 import graphqlTag from 'graphql-tag'
 import 'cross-fetch/polyfill' // required polyfill for fetch
 
 // configure the apollo client
 const apolloClient = new ApolloClient({
   uri: 'https://graphql-server-typescript.herokuapp.com',
+  cache: new InMemoryCache({
+    addTypename: false,
+  }),
 })
 
 /**
