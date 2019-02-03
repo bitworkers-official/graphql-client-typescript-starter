@@ -1,8 +1,8 @@
 [![travis build](https://img.shields.io/travis/bitworkers-official/graphql-client-typescript-starter.svg?style=flat-square)](https://travis-ci.org/bitworkers-official/graphql-client-typescript-starter) ![renovate](https://badges.renovateapi.com/github/bitworkers-official/graphql-client-typescript-starter)
 
-# GraphQL Client Typescript Starter
+# GraphQL Client TypeScript Starter
 
-> Starter template for a GraphQL & Typescript client
+> Starter template for a GraphQL & TypeScript client
 
 ## Quickstart 🚀
 
