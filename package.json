@@ -33,7 +33,7 @@
     "prettier": "1.16.4",
     "prettier-config-bitworkers": "1.4.1",
     "ts-node": "8.0.2",
-    "typescript": "3.3.1"
+    "typescript": "3.3.3"
   },
   "lint-staged": {
     "*.ts": [
