@@ -23,7 +23,7 @@
     "graphql-tag": "^2.10.1"
   },
   "devDependencies": {
-    "eslint": "5.15.1",
+    "eslint": "5.15.2",
     "eslint-config-bitworkers": "1.18.3",
     "eslint-plugin-graphql": "3.0.3",
     "graphql-cli": "3.0.11",
